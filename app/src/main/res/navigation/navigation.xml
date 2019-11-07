@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listEntry">
+
+    <fragment
+        android:id="@+id/listEntry"
+        android:name="com.josemarrima.contactappjavasamplefirebase.ListEntry.ListEntry"
+        android:label="list_entry_fragment"
+        tools:layout="@layout/list_entry_fragment" >
+        <action
+            android:id="@+id/action_listEntry_to_addEntry"
+            app:destination="@id/addEntry" />
+        <action
+            android:id="@+id/action_listEntry_to_detailEntry"
+            app:destination="@id/detailEntry" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEntry"
+        android:name="com.josemarrima.contactappjavasamplefirebase.AddEntry.AddEntry"
+        android:label="add_entry_fragment"
+        tools:layout="@layout/add_entry_fragment" />
+    <fragment
+        android:id="@+id/detailEntry"
+        android:name="com.josemarrima.contactappjavasamplefirebase.DetailEntry.DetailEntry"
+        android:label="detail_entry_fragment"
+        tools:layout="@layout/detail_entry_fragment" />
+</navigation>
