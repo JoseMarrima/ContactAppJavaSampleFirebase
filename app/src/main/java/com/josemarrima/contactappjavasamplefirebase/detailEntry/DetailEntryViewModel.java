@@ -1,4 +1,4 @@
-package com.josemarrima.contactappjavasamplefirebase.DetailEntry;
+package com.josemarrima.contactappjavasamplefirebase.detailEntry;
 
 import androidx.lifecycle.ViewModel;
 

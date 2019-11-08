@@ -1,4 +1,4 @@
-package com.josemarrima.contactappjavasamplefirebase.DetailEntry;
+package com.josemarrima.contactappjavasamplefirebase.addEntry;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.josemarrima.contactappjavasamplefirebase.R;
 
-public class DetailEntry extends Fragment {
+public class AddEntry extends Fragment {
 
-    private DetailEntryViewModel mViewModel;
+    private AddEntryViewModel mViewModel;
 
-    public static DetailEntry newInstance() {
-        return new DetailEntry();
+    public static AddEntry newInstance() {
+        return new AddEntry();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.detail_entry_fragment, container, false);
+        return inflater.inflate(R.layout.add_entry_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(DetailEntryViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(AddEntryViewModel.class);
         // TODO: Use the ViewModel
     }
 

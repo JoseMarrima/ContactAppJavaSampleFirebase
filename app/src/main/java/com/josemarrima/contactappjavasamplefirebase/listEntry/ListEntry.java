@@ -1,4 +1,4 @@
-package com.josemarrima.contactappjavasamplefirebase.ListEntry;
+package com.josemarrima.contactappjavasamplefirebase.listEntry;
 
 import androidx.lifecycle.ViewModelProviders;
 
