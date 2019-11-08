@@ -1,6 +1,7 @@
 package com.josemarrima.contactappjavasamplefirebase.data.local;
 
 import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
@@ -10,6 +11,7 @@ import com.josemarrima.contactappjavasamplefirebase.data.Entry;
 
 import java.util.List;
 
+@Dao
 public interface EntryDao {
     @Query("SELECT * FROM entry")
     LiveData<List<Entry>> loadAllEntries();
