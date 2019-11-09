@@ -13,19 +13,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.josemarrima.contactappjavasamplefirebase.R;
+import com.josemarrima.contactappjavasamplefirebase.databinding.DetailEntryFragmentBinding;
 
 public class DetailEntry extends Fragment {
 
     private DetailEntryViewModel mViewModel;
 
-    public static DetailEntry newInstance() {
-        return new DetailEntry();
-    }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.detail_entry_fragment, container, false);
+
+        DetailEntryFragmentBinding binding = DetailEntryFragmentBinding.inflate(inflater, container, false);
+
+        return binding.getRoot();
     }
 
     @Override

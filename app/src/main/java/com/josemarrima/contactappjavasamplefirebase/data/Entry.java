@@ -9,10 +9,10 @@ public class Entry {
 
     @NonNull
     @PrimaryKey
-    String id;
-    String name;
-    String email;
-    String phone;
+    private String id;
+    private String name;
+    private String email;
+    private String phone;
 
     public Entry(@NonNull String id, String name, String email, String phone) {
         this.id = id;

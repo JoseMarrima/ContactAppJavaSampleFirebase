@@ -21,7 +21,11 @@
         android:id="@+id/addEntry"
         android:name="com.josemarrima.contactappjavasamplefirebase.addEntry.AddEntry"
         android:label="add_entry_fragment"
-        tools:layout="@layout/add_entry_fragment" />
+        tools:layout="@layout/add_entry_fragment" >
+        <action
+            android:id="@+id/action_addEntry_to_listEntry"
+            app:destination="@id/listEntry" />
+    </fragment>
     <fragment
         android:id="@+id/detailEntry"
         android:name="com.josemarrima.contactappjavasamplefirebase.detailEntry.DetailEntry"
