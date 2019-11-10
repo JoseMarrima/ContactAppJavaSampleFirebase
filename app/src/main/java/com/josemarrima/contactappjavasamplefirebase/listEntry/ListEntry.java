@@ -39,8 +39,6 @@ public class ListEntry extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(ListEntryViewModel.class);
-        // TODO: Use the ViewModel
-
     }
 
 }

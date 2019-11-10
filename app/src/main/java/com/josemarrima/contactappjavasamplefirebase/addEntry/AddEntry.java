@@ -111,7 +111,6 @@ public class AddEntry extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(AddEntryViewModel.class);
-        // TODO: Use the ViewModel
     }
 
 }

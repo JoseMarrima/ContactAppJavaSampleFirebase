@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="entry"
+            type="com.josemarrima.contactappjavasamplefirebase.data.Entry" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -26,6 +28,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:textSize="24sp"
+                android:text="@{entry.name}"
                 app:layout_constraintStart_toStartOf="@+id/guideline3"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="@tools:sample/full_names" />
@@ -36,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
+                android:text="@{entry.email}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/number_textView"
                 app:layout_constraintTop_toBottomOf="@+id/number_textView"
@@ -46,6 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:text="@{entry.phone}"
                 app:layout_constraintStart_toStartOf="@+id/name_textView"
                 app:layout_constraintTop_toBottomOf="@+id/name_textView"
                 tools:text="@tools:sample/us_phones" />
