@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listEntry"
         android:name="com.josemarrima.contactappjavasamplefirebase.listEntry.ListEntry"
-        android:label="list_entry_fragment"
+        android:label="list of entries"
         tools:layout="@layout/list_entry_fragment" >
         <action
             android:id="@+id/action_listEntry_to_addEntry"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/addEntry"
         android:name="com.josemarrima.contactappjavasamplefirebase.addEntry.AddEntry"
-        android:label="add_entry_fragment"
+        android:label="add entry"
         tools:layout="@layout/add_entry_fragment" >
         <action
             android:id="@+id/action_addEntry_to_listEntry"
@@ -29,6 +29,6 @@
     <fragment
         android:id="@+id/detailEntry"
         android:name="com.josemarrima.contactappjavasamplefirebase.detailEntry.DetailEntry"
-        android:label="detail_entry_fragment"
+        android:label="detail of entry"
         tools:layout="@layout/detail_entry_fragment" />
 </navigation>

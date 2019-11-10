@@ -2,6 +2,7 @@ package com.josemarrima.contactappjavasamplefirebase.data;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "entry")
@@ -13,6 +14,10 @@ public class Entry {
     private String name;
     private String email;
     private String phone;
+
+    @Ignore
+    public Entry() {
+    }
 
     public Entry(@NonNull String id, String name, String email, String phone) {
         this.id = id;
